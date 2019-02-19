@@ -53,7 +53,7 @@ button:hover {
   background-color: #309c7a;
   border-radius: 25px;
   box-shadow: 0px 5px 10px rgba(188, 157, 157, 0.7);
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .calculator__display-area_history {
