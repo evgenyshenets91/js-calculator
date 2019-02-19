@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #333333;
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);
+  background: linear-gradient(to right, #dd1818, #333333);
+
+
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #9ce07d;
+  background-color: #2c3d59;
+  border: none;
+  outline: none;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(92, 38, 38, 0.7);
+}
+
+button:hover {
+  background-color: darkorange;
+  border: 1px solid darkgreen;
+  color: #2c3d59;
+}
+
+.btn-result,
+.btn-ac {
+  display: inline-block;
+  width: 45%;
+}
+
+.btn-ac {
+  background-color: darkorange;
+  color: #2c3d59;
+
+}
+
+.calc-operator {
+  background-color: darkorange;
+  color: #2c3d59;
+}
+
+
+.calculator {
+  width: 253px;
+
+  margin: 60px auto;
+  background-color: #309c7a;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(188, 157, 157, 0.7);
+  margin-bottom: 10px;
+}
+
+.calculator__display-area_history {
+  margin: 0;
+  padding: 0;
+  color: #2c3d59;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  padding-right: 10px;
+  height: 20px;
+}
+
+.calculator__display-area {
+  text-align: right;
+  overflow: hidden;
+  padding: 10px;
+  height: 80px;
+
+
+}
+
+.calculator__display-area__output {
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  line-height: 50px;
+  color: silver;
+  transition-duration: 0.2s;
+  transition-property: font-size;
+}
