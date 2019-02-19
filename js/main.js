@@ -88,7 +88,7 @@ resultBtn.addEventListener('click', () => {
 
   }
 
-  output.innerText = result.toFixed(5);
+  output.innerText = result;
   pandingVal = 0;
   displayVal = result;
   onTextCharge();
