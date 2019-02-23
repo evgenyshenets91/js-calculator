@@ -1,24 +1,24 @@
-var decimalBtn = document.getElementsByTagName('button').decimal;
-var clearBtn = document.getElementsByTagName('button').clear;
-var backspaceBtn = document.getElementsByTagName('button').backspace;
-var resultBtn = document.getElementsByTagName('button').result;
+const decimalBtn = document.getElementsByTagName('button').decimal;
+const clearBtn = document.getElementsByTagName('button').clear;
+const backspaceBtn = document.getElementsByTagName('button').backspace;
+const resultBtn = document.getElementsByTagName('button').result;
 
 
-var output = document.getElementById('outputResult');
-var outputHistory = document.querySelector('.calculator__display-area_history')
+const output = document.getElementById('outputResult');
+const outputHistory = document.querySelector('.calculator__display-area_history')
 
 
-var calcNumBtn = document.getElementsByClassName('calc-num');
-var calcOperatorBtn = document.getElementsByClassName('calc-operator');
+const calcNumBtn = document.getElementsByClassName('calc-num');
+const calcOperatorBtn = document.getElementsByClassName('calc-operator');
 
-var displayVal = '0';
-var pandingVal; // Первый операнд. значение которое хранится в памяти, если мы вводим второй операнд
-var result;
-var operator;
-var arrHistory = [];
+let displayVal = '0',
+    pandingVal, // Первый операнд. значение которое хранится в памяти, если мы вводим второй 
+    result,
+    operator,
+    arrHistory = [];
 
-var updateVal = (clickObj) => {
-  var btn = clickObj.target.innerText
+const updateVal = (clickObj) => {
+  let btn = clickObj.target.innerText;
 
   if (displayVal === '0')
     displayVal = '';
@@ -36,10 +36,9 @@ function resultOperation(clickObj) {
 
   arrHistory.push(pandingVal);
   arrHistory.push(operator);
-  var arrToStr = arrHistory.slice(0, 2).join(' ');
+  let arrToStr = arrHistory.slice(0, 2).join(' ');
 
   outputHistory.innerText = arrToStr;
-  console.log(operator)
 }
 
 // Функция изменения размера текста
